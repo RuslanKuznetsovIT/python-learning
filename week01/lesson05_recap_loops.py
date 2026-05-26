@@ -19,6 +19,5 @@
 
 # Пиши код ниже:
 
-
-for product in range(1,6):
-    print(f"{product} товаров — скидка {product*5}%")
+for i in range(1,6):
+    print(f"{i} товаров — скидка {i * 5}%")

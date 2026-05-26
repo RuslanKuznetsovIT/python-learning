@@ -16,3 +16,15 @@
 # Дисциплина: запусти → сверь посимвольно с эталоном → потом сдавай.
 
 # Пиши код ниже:
+
+def calculate_bonus(base, percent):
+    salary = base * percent / 100
+    return salary
+
+Alex = calculate_bonus(80000,25)
+Mary = calculate_bonus(60000,30)
+Viktor = calculate_bonus(120000,15)
+
+print(f"Бонус Алексея: {Alex}")
+print(f"Бонус Марии: {Mary}")
+print(f"Бонус Виктора: {Viktor}")
