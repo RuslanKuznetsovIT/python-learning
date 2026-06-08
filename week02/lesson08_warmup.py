@@ -51,6 +51,14 @@ print(f"250000 -> {var_3}")
 
 # твой код:
 
+numbers = [85, 92, 78, 96, 88]
+count = 0
+total = 0
+for number in numbers:
+    count += 1
+    print(f"Оценка {count}: {number} ")
+    total = total + number
+print(f"Средняя оценка: {total/count}")
 
 
 
@@ -72,7 +80,12 @@ print(f"250000 -> {var_3}")
 
 # твой код:
 
-
+managers = {"Анна": 500000, "Игорь": 750000, "Света": 600000}
+total = 0
+for manager_name, sale in managers.items():
+    print(f"  {manager_name}: {sale} ₽")
+    total = total + sale
+print(f"Общий план: {total} ₽")
 
 
 # ===============================================
@@ -99,3 +112,12 @@ orders = [
 # Высокий приоритет: 3
 
 # твой код (список orders уже создан выше):
+for order in orders:
+    print(f"{order['client']} - {order['issue']} ({order['priority']})")
+
+    
+count = 0
+for order in orders:
+    if order["priority"] == 'высокий':
+        count += 1
+print(f"Высокий приоритет: {count}")
