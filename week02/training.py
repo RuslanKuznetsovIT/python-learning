@@ -67,3 +67,20 @@ def get_expensive_names(products):
     return result
 
 print(f"Дорогие товары: {get_expensive_names(products)}")
+
+
+staff = [
+    {"name": "Анна", "salary": 80000},
+    {"name": "Игорь", "salary": 120000},
+    {"name": "Света", "salary": 95000},
+]
+
+def total_payroll(staff):
+    total = 0
+    for manager in staff:
+        total = total + manager["salary"]
+    return total
+
+print(f"Фонд оплаты: {total_payroll(staff)}")
+    
+        
