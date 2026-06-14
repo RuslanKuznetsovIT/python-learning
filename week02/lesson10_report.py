@@ -27,3 +27,21 @@ deals = [
 
 # твой код:
 
+def deals_stat(deals):
+    total = 0
+    count_closed = 0
+    for deal in deals:
+        if deal['status'] == 'закрыта':
+            try:
+                total += int(deal['amount'])
+                count_closed += 1
+            except ValueError:
+                pass
+    return total, count_closed
+
+revenue, count = deals_stat(deals)
+
+print(f'=== ОТЧЁТ ПО СДЕЛКАМ ===')
+print(f'Выручка: {revenue} руб.')
+print(f'Закрытых сделок: {count}')
+print(f'Средний чек: {round((revenue / count), 2)} руб.')
