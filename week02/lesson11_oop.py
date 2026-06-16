@@ -45,3 +45,13 @@ m = Manager()
 m.name = 'Анна'
 m.plan = 500000
 print(f'Менеджер {m.name}, план {m.plan}')
+
+class Manager:
+    def __init__(self, name, plan):
+        self.name = name
+        self.plan = plan
+m = Manager('Анна', 500000)
+m_2= Manager('Игорь', 700000)
+
+print(f'Менеджер {m.name}, план {m.plan}')
+print(f'Менеджер {m_2.name}, план {m_2.plan}')
